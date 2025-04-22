@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TeoLógica</title>
+  <link rel="icon" href="logo_icon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+
+    :root {
+      --cor-primaria: #00c4c9;
+      --cor-secundaria: #ffc93c;
+      --cor-texto: #e5e5e5;
+      --cor-fundo: #091520;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background-color: var(--cor-fundo);
+      color: var(--cor-texto);
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      background-color: var(--cor-fundo);
+      border-bottom: 1px solid var(--cor-primaria);
+    }
+
+    header img {
+      height: 100px;
+      width: 120px;
+    }
+
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: var(--cor-texto);
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--cor-secundaria);
+    }
+
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      color: var(--cor-primaria);
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      margin-top: 1rem;
+      color: var(--cor-texto);
+    }
+
+    .devocionais {
+      padding: 2rem;
+    }
+
+    .devocionais h2 {
+      color: var(--cor-secundaria);
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background-color: #11202e;
+      border-radius: 12px;
+      padding: 1.5rem;
+      transition: transform 0.3s ease;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      margin-bottom: 0.5rem;
+      color: var(--cor-primaria);
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+
+    .card a {
+      color: var(--cor-secundaria);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .video-card iframe {
+      width: 100%;
+      height: 200px;
+      border: none;
+      border-radius: 8px;
+    }
+
+
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="WhatsApp Image 2025-04-22 at 08.03.00 (1).jpeg" alt="Logo TeoLógica">
+    <nav>
+      <a href="#devocionais">Devocionais</a>
+      <a href="#artigos">Artigos</a>
+      <a href="#videos">Vídeos</a>
+      <a href="#materiais">Materiais</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Bem-vindo ao Teo<span style="color: #ffc93c;">Lógica</span></h1>
+    <p>Reflexões, estudos e materiais sobre Teologia e vida cristã</p>
+  </section>
+
+  <section class="devocionais" id="devocionais">
+    <h2>Devocionais Recentes</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Confiança em Meio à Tempestade</h3>
+        <p>“Mesmo quando tudo parece incerto, Deus continua no controle.”</p>
+        <a href="devocional-tempestade.html">Ler mais</a>
+      </div>
+      <div class="card">
+        <h3>Graça que Transforma</h3>
+        <p>A graça de Deus não apenas perdoa, mas também transforma o nosso viver.</p>
+        <a href="devocional-graca-transforma.html">Ler mais</a>
+      </div>
+      <div class="card">
+        <h3>A Esperança do Evangelho</h3>
+        <p>O Evangelho nos dá uma esperança viva, que não se apaga nas lutas da vida.</p>
+        <a href="devocional-esperanca-evangelho.html">Ler mais</a>
+      </div>
+    </div>
+
+    <section class="artigos" id="artigos">
+        <h2>Artigos Teológicos</h2>
+        <div class="cards">
+          <div class="card">
+            <h3>A Trindade na Prática Cristã</h3>
+            <p>Explorando como a doutrina da Trindade molda a vida devocional e comunitária.</p>
+            <a href="artigo-trindade-pratica.html">Ler artigo</a>
+          </div>
+          <div class="card">
+            <h3>Sola Scriptura Hoje</h3>
+            <p>A suficiência das Escrituras em um mundo de múltiplas vozes e ideologias.</p>
+            <a href="artigo-sola-scriptura.html">Ler artigo</a>
+          </div>
+          <div class="card">
+            <h3>O Reino de Deus em Perspectiva</h3>
+            <p>O que significa viver como cidadãos do Reino em um contexto secularizado?</p>
+            <a href="artigo-reino-de-deus.html">Ler artigo</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="videos" id="videos">
+        <h2>Vídeos Recentes</h2>
+        <div class="cards">
+            <div class="card video-card">
+                <a href="https://www.youtube.com/watch?v=P7giUoJU0BU" target="_blank" rel="noopener noreferrer">
+                  <img src="https://img.youtube.com/vi/P7giUoJU0BU/hqdefault.jpg" alt="Miniatura do vídeo Oração e Intimidade com Deus" style="width: 100%; border-radius: 8px;">
+                  <h3 style="margin-top: 0.8rem; color: var(--cor-primaria);">Entenda o Calvinismo.</h3>
+                </a>
+              </div>
+              
+              <div class="card video-card">
+                <a href="https://www.youtube.com/watch?v=ESIeNZIprnA" target="_blank" rel="noopener noreferrer">
+                  <img src="https://img.youtube.com/vi/ESIeNZIprnA/hqdefault.jpg" alt="Miniatura do vídeo Oração e Intimidade com Deus" style="width: 100%; border-radius: 8px;">
+                  <h3 style="margin-top: 0.8rem; color: var(--cor-primaria);">Entrevistei um Padre para falar sobre economia.</h3>
+                </a>
+              </div>
+
+              <div class="card video-card">
+                <a href="https://www.youtube.com/watch?v=zq-QcFjgeQA" target="_blank" rel="noopener noreferrer">
+                  <img src="https://img.youtube.com/vi/zq-QcFjgeQA/hqdefault.jpg" alt="Miniatura do vídeo Oração e Intimidade com Deus" style="width: 100%; border-radius: 8px;">
+                  <h3 style="margin-top: 0.8rem; color: var(--cor-primaria);">Entrevistei um Padre para falar sobre economia.</h3>
+                </a>
+              </div>
+
+      </section>
+
+      <section class="materiais" id="materiais">
+        <h2>Materiais para Download</h2>
+        <div class="cards">
+          <div class="card">
+            <h3>Plano de Leitura Bíblica</h3>
+            <p>Organize sua rotina devocional com esse guia de leitura anual.</p>
+            <a href="#">Baixar PDF</a>
+          </div>
+          <div class="card">
+            <h3>Slides de Ensino</h3>
+            <p>Material para grupos pequenos ou aulas sobre fundamentos da fé cristã.</p>
+            <a href="#">Baixar Apresentação</a>
+          </div>
+          <div class="card">
+            <h3>Imagem: Versículo do Dia</h3>
+            <p>Baixe e compartilhe versículos inspiradores nas redes sociais.</p>
+            <a href="#">Baixar Imagem</a>
+          </div>
+        </div>
+      </section>
+
+</body>
+</html>
